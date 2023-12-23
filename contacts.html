@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <link href="./css/amusment_park.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Контакти</title>
+</head>
+
+<body>
+    <header>
+        <h1>Най-големите увеселителни паркове в света</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="history.html">История на увеселителните паркове</a></li>
+                <li>
+                    <a href="">Увеселителни паркове</a>
+                    <ul class="drop-down">
+                        <li><a href="global_vilage.html">Global Village</a></li>
+                        <li><a href="disneyland.html">Disneyland</a></li>
+                        <li><a href="puy_du_fou.html">Puy Du Fou</a></li>
+                        <li><a href="magic_mountain.html">Six Flags Magic Mountain</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacts.html">Контакти <sub><i class="material-icons">call</i></sub></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="contact">
+            <h1>Контакти</h1>
+            <ul>
+                <li>0886974581</li>
+                <li>0896354821</li>
+                <li>0888452169</li>
+                <li>0875421845</li>
+            </ul>
+        </div>
+
+
+
+        <div class="registration">
+            <h1>Форма за запитване</h1>
+            <form action="https://www.google.bg/" method="get" target="_blank">
+                <label for="name">Име</label>
+                <input type="text" id="name" name="firstname" placeholder="Вашето име.."><br>
+                <label for="last_name">Фамилия</label>
+                <input type="text" id="last_name" name="lastname" placeholder="Вашата фамилия.."><br>
+                <label for="age">Години</label>
+                <input type="number" id="age" name="age" max="100" min="1"><br>
+                <fieldset>
+                    <legend>Пол</legend>
+                    <!--<label for="gender">Пол</label><br>-->
+                    <input type="radio" id="male" value="Мъж" name="gender">
+                    <label for="male">Мъж</label><br>
+                    <input type="radio" id="female" value="Жена" name="gender">
+                    <label for="female">Жена</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Откъде научихте за сайта?</legend>
+                    <input type="checkbox" id="social-media" name="question" value="SocialMedia">
+                    <label for="social-media">Social Media</label><br>
+                    <input type="checkbox" id="fr" name="question" value="Friends">
+                    <label for="fr">Friends</label><br>
+                    <input type="checkbox" id="google" name="question" value="Google">
+                    <label for="google">Google</label><br>
+                </fieldset>
+                <input type="submit" value="Потвърди">
+                <input type="reset" value="Рестартиране">
+            </form>
+        </div>
+    </div>
+    <footer></footer>
+
+</body>
+
+</html>

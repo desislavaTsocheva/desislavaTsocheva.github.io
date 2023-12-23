@@ -1,0 +1,564 @@
+﻿
+body {
+    background-color: #f1e8fb;
+    margin: 5px;
+}
+
+h1 {
+    color: #d3a9e4;
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 2px 2px #9262a7;
+    font-family: 'Comic Sans MS';
+}
+
+h2, h3 {
+    margin: 20px;
+    font-family: 'Comic Sans MS';
+    font-size: 24px;
+}
+
+hr {
+    height: 3px;
+    background-color: #9262a7;
+}
+
+img {
+    height: 400px;
+    width: 60%;
+    margin: 40px 300px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+}
+
+p {
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Comic Sans MS';
+}
+
+dt, dd {
+    font-size: 18px;
+    font-family: 'Comic Sans MS';
+    margin: 10px;
+}
+
+ol li {
+    font-family: 'Comic Sans MS';
+    font-size: 16px;
+}
+/* Форматиране на линкове */
+
+.link a {
+    font-size: 18px;
+    margin: 10px;
+}
+
+    .link a:link {
+        color: #532e74;
+    }
+
+    .link a:visited {
+        color: #9262a7;
+    }
+
+    .link a:active {
+        color: white;
+    }
+
+/* Форматиране на навигационно меню */
+nav {
+    background-image: linear-gradient(to right,#9874a8,#d3a9e4,#f2d6fe);
+    margin-top: 5px;
+    height: 50px;
+    opacity: 0.9;
+    box-shadow: 2px 2px 2px grey;
+/*    position:relative;
+*/   
+}
+
+    nav ul {
+        text-align: center;
+    }
+
+        nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            font-size: 18px;
+            font-family: 'Comic Sans MS';
+            margin-top: 13px;
+            text-transform: uppercase;
+            margin-right: 30px;
+            text-align: center;
+        }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+    }
+
+        nav a:hover {
+            background-color: #9262a7;
+            display: block;
+            border-radius: 5px;
+        }
+
+    nav ul ul {
+        display: none;
+        position: absolute;
+    }
+
+    nav ul li:hover > ul {
+        display: inline-block;
+        background-color: #d3a9e4;
+        opacity: 1;
+        border: none;
+        box-shadow: 2px 2px 2px grey;
+    }
+
+    nav ul li > ul {
+        top: 104px;
+        left: 850px;
+    }
+
+    nav ul ul li {
+        width: 170px;
+        position: relative;
+        display: block;
+    }
+/* Форматиране на снимка като бегграунд */
+.bg-img {
+    background-image: url('https://media.disneylandparis.com/d4th/en-gb/images/HD13302_2_2050jan01_world_disneyland-park-dlp-website-visual_5-2_tcm752-248638.jpg?w=1920&f=webp');
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+/*    border-end-start-radius:100px;
+    border-end-end-radius:100px;*/ 
+/*    clip-path: ellipse(100% 100% at 50% 0%);
+*/
+}
+    .bg-img:hover {
+        opacity: 0.7;
+        transition: .5s ease;
+    }
+
+
+/* Форматиране на главния текст на страницата */
+.main-info {
+    text-align: center;
+    margin: 30px;
+    padding-top: 20px;
+    width: 100%;
+    height: 60px;
+}
+
+    .main-info p {
+        font-size: 24px;
+        font-family: 'Comic Sans MS';
+    }
+
+/* Форматиране на снимки */
+.kind-atractions img{
+    border-radius: 15px;
+}
+
+.slider-container li img{
+    width:60%;
+    height:450px;
+    margin-left:310px;
+}
+.history-img img {
+    height: 400px;
+    width: 40%;
+    margin: 20px 70px;
+    flex-flow: row wrap;
+    border-radius: 10px;
+}
+
+    .history-img img:hover {
+        opacity: 0.7;
+        transition: .5s ease;
+    }
+
+/* Форматиране на формата за запитване */
+.registration {
+    float: right;
+    margin: 20px 60px;
+    background-color: #f2d6fe;
+    height: 420px;
+    width: 40%;
+    padding: 15px;
+    border: 3px solid;
+    border-color: #9262a7;
+}
+
+    .registration h1 {
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+input[type=text] {
+    background-color: #f1e8fb;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    width: 60%;
+    border-color: #9262a7;
+}
+
+input[type=number] {
+    background-color: #f1e8fb;
+    color: black;
+    padding: 10px;
+    border-color: #9262a7;
+}
+
+input[type=submit] {
+    background-color: #f1e8fb;
+    color: black;
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 30%;
+    height: 40px;
+    float: left;
+    border-color: #9262a7;
+    border-radius:10px;
+}
+
+input[type=reset] {
+    background-color: #f1e8fb;
+    color: black;
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 40%;
+    height: 40px;
+    float: right;
+    border-color: #9262a7;
+    border-radius: 10px;
+}
+fieldset{
+    width:50%;
+}
+/* Форматиране на полето за контакти */
+.contact {
+    background-color: white;
+    width: 20%;
+    height: 250px;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+    .contact ul {
+        list-style-image: url("/images/phone.png");
+    }
+
+        .contact ul li {
+            margin: 10px;
+            padding: 0;
+        }
+
+    .contact li {
+        width: 10%;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .contact h1 {
+        text-align: left;
+        margin: 20px 30px;
+    }
+
+/* Форматиране на статийте */
+
+.article {
+    display: inline-flex;
+    margin: 40px 10px;
+}
+
+    .article .image {
+        padding: 30px;
+        position: relative;
+        height: 250px;
+        width: 80%;
+        margin: 0px 20px;
+    }
+/* .article .image:hover {
+        transform: translateY(-10px);
+    }*/
+
+#article1, #article2, #article3 {
+    background-color: #f2d6fe;
+    margin: 20px;
+    border-radius: 17px;
+    box-shadow: 2px 2px 2px grey;
+}
+
+#article3 {
+    width: 50%;
+}
+
+
+.description {
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-size: 17px;
+    color: #9262a7;
+    text-shadow: 2px 1px 1px white;
+}
+
+#article3:hover {
+    transform: scale(1.1);
+/*    Методът увеличава или намалява размера на даден елемент (според параметрите, дадени за ширината и височината)
+*/}
+
+#article1:hover {
+    transform: scale(1.1);
+    /*    Методът увеличава или намалява размера на даден елемент (според параметрите, дадени за ширината и височината)
+*/
+}
+
+#article2:hover {
+    transform: scale(1.1);
+    /*    Методът увеличава или намалява размера на даден елемент (според параметрите, дадени за ширината и височината)
+*/
+}
+
+
+.main {
+    display: flex;
+}
+.kind-atractions ol {
+    float: left;
+}
+.kind-atractions .images-atractions {
+    width: 20%;
+    height: 200px;
+    display: flex;
+    padding: 15px;
+}
+
+.kind-atractions img {
+    margin: 5px 40px;
+    width: 100%;
+    height: 200px;
+}
+
+/* Форматиране на таблиците */
+
+table {
+    border: 3px solid;
+    border-color: #9262a7;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    margin: 20px;
+}
+
+    table tr {
+        background-color: #f1e8fb;
+    }
+
+        table tr:nth-child(2n+1) {
+            background-color: #d3a9e4;
+        }
+
+    table td:nth-child(2n+1) {
+        color: #532e74;
+    }
+
+    table img {
+        width: 100%;
+        height: 100px;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+/* Форматиране на полето с информация за личност */
+
+.creator-info {
+    height: 300px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    background-color: #c5aad0;
+    border-radius: 17px;
+    margin-left: 400px;
+}
+
+    .creator-info img {
+        height: 300px;
+        width: 30%;
+        margin: 5px;
+    }
+
+    .creator-info p {
+        font-size: 18px;
+        text-align: justify;
+        color: white;
+    }
+/* Форматиране на видео*/
+
+video {
+    width: 80%;
+    height: 600px;
+    margin: 50px;
+}
+
+.vid {
+    text-align: center;
+}
+
+/* Форматиране на полето за началния текст */
+
+.intro {
+    margin: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.intro-div {
+    background-image: linear-gradient(to right,#b286c6,#d3a9e4,#f2d6fe);
+    border-radius: 10px;
+}
+
+/* Форматиране на основния текст на страниците */
+
+.main-text a {
+    text-decoration: none;
+}
+
+    .main-text a:link {
+        text-decoration: none;
+        color: #9262a7;
+    }
+
+    .main-text a:visited {
+        color: #d3a9e4;
+    }
+
+    .main-text a:hover {
+        text-decoration: underline;
+    }
+
+    .main-text a:active {
+        color: white;
+    }
+
+.main-text p {
+    text-align: justify;
+}
+
+.main-text h3 {
+    color: #d3a9e4;
+    text-shadow: 1px 2px 1px white;
+    font-size: 26px;
+    text-align: center;
+}
+
+/* Форматиране на снимките към основния текст */
+
+.slider {
+    width: 100%;
+    height: 300px;
+}
+
+    .slider img {
+        height: 250px;
+        width: 30%;
+        margin: 20px;
+        box-shadow: 5px 2px 5px black;
+    }
+
+/* Форматиране на списък */
+
+.list-add {
+    width: 30%;
+    height: 50px;
+    background-color: #f2d6fe;
+    margin: 10px 500px;
+    border-radius: 10px;
+}
+
+    .list-add ul li {
+        font-size: 18px;
+    }
+
+#image {
+    height: 500px;
+    width: 60%;
+}
+
+/* За анимацията към снимките */
+
+.container {
+    position: relative;
+    width: 80%;
+}
+
+    .container img {
+        box-shadow: 2px 2px 2px black;
+    }
+
+.overlay {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 300px;
+    right: 0;
+    height: 400px;
+    width: 60%;
+    opacity: 0;
+    transition: .5s ;
+    background-color: #f2d6fe;
+}
+
+.container:hover .overlay {
+    opacity: 0.9;
+}
+
+.text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+/*    Методът премества елемент от текущата му позиция (според към параметрите, дадени за оста X и оста Y)*/ 
+    font-family: 'Comic Sans MS';
+
+}
+
+.container_two {
+    position: relative;
+    width: 80%;
+}
+
+    .container_two img {
+        box-shadow: 2px 2px 2px black;
+    }
+
+.overlay_two {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 300px;
+    right: 0;
+    height: 500px;
+    width: 60%;
+    opacity: 0;
+    transition: .5s ;
+    background-color: #f2d6fe;
+}
+
+.container_two:hover .overlay_two {
+    opacity: 0.9;
+}
